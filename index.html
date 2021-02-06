@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Program</title>
+</head>
+
+    <!-- 7---------------------------------------------------------------------------- -->
+    <input type="number" id="num">
+    <p id="fact"></p>
+    <button onclick="facto()">Calculate Factorial</button>
+
+<body>
+
+</body>
+<script>
+
+    //7----------------------------------------------------------------------------
+    function facto() {
+        let num = parseInt(document.getElementById("num").value);
+        let fact = 1;
+        for (i = 1; i <= num; i++) {
+            fact = fact * i;
+            document.getElementById("fact").innerHTML = fact;
+        }
+    }
+</script>
+
+</html>
